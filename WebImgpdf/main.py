@@ -1,7 +1,10 @@
 """
 @File : main.py
 @Author : mr
-@Description : 
+@Description :
+1.根据URL下载到images文件夹下边
+2.下载成功会显示
+@Time : 2024
 """
 import os
 import requests
@@ -41,4 +44,5 @@ def download_image(image_number):
 
 # 下载指定范围内的图片
 for image_number in range(start_number, end_number + 1):
+    # 实时下载显示
     download_image(image_number)
